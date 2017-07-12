@@ -30,7 +30,7 @@ def mydependent(lamb, gstart, rstart, iterations, saveplace):
     plt.plot(mys, gs)
     plt.plot(mys, rs2)
     plt.plot(mys, gs2)
-    plt.savefig('/Users/teodorbucht/Google Drive/Rays 2017/Elever/Teodor Bucht/Rays_finalpaper/' + saveplace + '.pdf')
+    plt.savefig(saveplace + '.pdf')
 
     plt.legend(['Red Squirrels', 'Grey Squirrels'])
     plt.show()
@@ -43,7 +43,7 @@ def plotKillGrey(lambda_g, lambda_r, mu_g, mu_r, saveplace):
     plt.plot(d, klambda_g)
     plt.xlabel('$\lambda_g - \lambda_r$')
     plt.ylabel('Fraction of grey squirrels that needs to be killed')
-    plt.savefig('/Users/teodorbucht/Google Drive/Rays 2017/Elever/Teodor Bucht/Rays_finalpaper/' + saveplace + '.pdf')
+    plt.savefig(saveplace + '.pdf')
     plt.show()
 def killsneeded(lambda_g, lambda_r, mu_g, mu_r):
     return (lambda_g - 1 - lambda_g*(lambda_r - 1)/mu_r)
@@ -62,7 +62,7 @@ def plotFixedPoints(lambda_g, lambda_r, mu_g, mu_r, saveplace):
     plt.grid()
     plt.xlabel('$g$')
     plt.ylabel('$r$') 
-    plt.savefig('/Users/teodorbucht/Google Drive/Rays 2017/Elever/Teodor Bucht/Rays_finalpaper/' + saveplace + '.pdf')
+    plt.savefig(saveplace + '.pdf')
     plt.show()
 def lambdadependent(myr, myg, gstart, rstart, iterations, saveplace, theoretical):
     rs = []
@@ -134,7 +134,7 @@ def lambdadependent(myr, myg, gstart, rstart, iterations, saveplace, theoretical
     plt.ylabel("Population")
     plt.grid()
 
-    plt.savefig('/Users/teodorbucht/Google Drive/Rays 2017/Elever/Teodor Bucht/Rays_finalpaper/' + saveplace + '.pdf')
+    plt.savefig(saveplace + '.pdf')
     plt.show()
 
 def rzero(lambdar, lambdag, myg, myr):
@@ -201,7 +201,7 @@ def plotEigenvalues(myg, myr, name, points, interval):
     plt.ylabel('$\lambda_r$')
     plt.hot()
     plt.grid()
-    plt.savefig('/Users/teodorbucht/Google Drive/Rays 2017/Elever/Teodor Bucht/Rays_finalpaper/' + name + '.pdf')
+    plt.savefig(saveplace + '.pdf')
     plt.savefig(name)
     plt.show()
 
